@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style type="text/css">
+        .box{
+            background: pink;
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            font-size: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        #b1:hover{
+            background: green;
+            box-shadow: 5px 5px 31px 0px rgba(0,0,0,0.3);
+            color: white;
+            transform: translate(-5px,-5px);
+        }
+        
+        .textbox{
+            display: block;
+            width: 160px;
+            margin: auto;
+        }
+        
+        #b2:active{
+            background: rebeccapurple;
+            font-size: 42px;
+        }
+
+        .box2{
+            display: none;
+            background: rgb(27, 157, 45);
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+            padding: 1px 0;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 500px){
+            #b5{
+                display: block;
+                background: rgb(27, 157, 45);
+            }
+        }
+        @media (min-width: 501px) and (max-width: 800px){
+            #b4{
+                display: block;
+                background: rgb(133, 157, 27);
+            }
+        }
+        @media (min-width: 801px){
+            #b3{
+                display: block;
+                background: rgb(157, 109, 27);
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Hover Pseudo Classes</h1>
+    <div class="box" id="b1">
+        Hover on me to see the effect.
+    </div>
+    <h1>Active Pseudo Class</h1>
+    <div class="box" id="b2">
+        Click on me to see the effect
+    </div>
+
+    <h1>Media Querry</h1>
+    <p>Change width to see the effect</p>
+
+    <div class="box2" id="b3">
+        <h2>Desktop View</h2>
+    </div>
+
+    <div class="box2" id="b4">
+        <h2>Tablet View</h2>
+    </div>
+
+    <div class="box2" id="b5">
+        <h2>Mobile View</h2>
+    </div>
+</body>
+</html>
