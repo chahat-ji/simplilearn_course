@@ -14,6 +14,8 @@
     <button onclick="add()">Increase</button>
     <button onclick="sub()">Decrease</button>
 
+    <p>Open console to view the content</p>
+
 
 
 
@@ -51,6 +53,49 @@
     //unshift to add item in front
     cars.unshift("audi");
     console.log('unshift',cars);
+
+    
+    //new array
+    let bikes = ["ninja","hero","yamaha"];
+    console.log("bikes-",bikes);
+
+    // adding bikes and cars in new array 
+    console.log("vehicles = cars + bikes");
+    let vehicles = cars.concat(bikes);
+    console.log("vehicles - ",vehicles);
+
+    console.log("reversed array-",vehicles.reverse())
+
+    console.log("sorted array-",vehicles.sort())
+
+
+    console.group("map method")
+    //using map method for array
+    let num1 = [1,2,3,4,5];
+    console.log("num1-",num1);
+
+    let num2 = num1.map(multiply);
+    function multiply(temp){
+        return temp*2;
+    }
+    console.log("num2 is created by map method")
+    console.log("num2-",num2);
+    console.groupEnd();
+
+    
+    //filter method
+    console.group("filter method")
+    let num3 = num1.filter(even);
+    function even(temp){
+        return temp%2==0;
+    }
+    console.log("num3 is created by filter(only even) method")
+    console.log("num3-",num3);
+    console.groupEnd();
+
+
+
+
 
     let x = 10
     document.getElementById("demo2").innerHTML = x;
