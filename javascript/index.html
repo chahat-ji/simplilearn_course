@@ -21,6 +21,8 @@
 
 </body>
 
+<script src="./script.js" type="script/text"></script>
+
 <script>
     let cars = ["bmw", "volve", "honda"];
     document.getElementById("demo").innerHTML = cars;
@@ -69,7 +71,7 @@
     console.log("sorted array-",vehicles.sort())
 
 
-    console.group("map method")
+    console.group("map method");
     //using map method for array
     let num1 = [1,2,3,4,5];
     console.log("num1-",num1);
@@ -84,7 +86,7 @@
 
     
     //filter method
-    console.group("filter method")
+    console.group("filter method");
     let num3 = num1.filter(even);
     function even(temp){
         return temp%2==0;
@@ -93,11 +95,16 @@
     console.log("num3-",num3);
     console.groupEnd();
 
+   //grouping in console
+   console.group("group1");
+   console.log("inside group 1");
+   console.group("group 2");
+   console.log("inside group 2");
+   console.groupEnd();
+   console.groupEnd();
 
 
-
-
-    let x = 10
+    let x = 10;
     document.getElementById("demo2").innerHTML = x;
 
     function add(){
@@ -111,4 +118,8 @@
 
 
 </script>
+
+<!-- rest of code is in external script -->
+<script src="./script.js"></script>
+
 </html>
