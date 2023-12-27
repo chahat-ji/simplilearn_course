@@ -16,12 +16,20 @@
 
     <p>Open console to view the content</p>
 
+    <h2>Form validation using javascript</h2>
+    <form action="message.html" name="myForm" onsubmit="return(validate())">
+        <input type="text" name="Email" placeholder="Enter email">
+        <br>
+        <input type="text" name="Password" placeholder="Enter Password">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
 
 
 
 </body>
 
-<script src="./script.js" type="script/text"></script>
 
 <script>
     let cars = ["bmw", "volve", "honda"];
@@ -119,7 +127,12 @@
 
 </script>
 
+
 <!-- rest of code is in external script -->
 <script src="./script.js"></script>
+
+
+<!-- form validation script  -->
+<script src="./formValidation.js"></script>
 
 </html>
