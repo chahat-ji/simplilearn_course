@@ -163,5 +163,3 @@ console.groupEnd();
 
 
 console.groupEnd();
-
-console.log("random");
