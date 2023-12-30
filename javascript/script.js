@@ -19,6 +19,20 @@ while(x<=10){
 }
 console.groupEnd();
 
+//forin loop
+console.group("forin loop");
+let motor = {
+    brand: "maruti",
+    model: 2016,
+    varient: "petrol" 
+};
+
+for (let key in motor){
+    console.log(key,motor[key]);
+}
+console.groupEnd();
+
+
 
 console.groupEnd();
 
@@ -149,3 +163,16 @@ console.groupEnd();
 
 
 console.groupEnd();
+
+function logMessage() {
+    console.log('This message is logged every second.');
+}
+
+// Set up the interval to log the message every second
+const intervalID = setInterval(logMessage, 1000);
+
+// Clear the interval after 5 seconds
+setTimeout(function() {
+    clearInterval(intervalID);
+    console.log('Interval cleared after 5 seconds.');
+}, 5000);
